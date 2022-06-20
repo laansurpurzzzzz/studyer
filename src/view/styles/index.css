@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body, #root{
+    height: 100vh;
+}
+.menu{
+    background: #AACDDF;
+}
+.svgIcon {
+    width: 25px;
+    height: 25px;
+}
+.menu_listItem{
+    color: #fff;
+}
+.menu_listItem:not(:last-child){
+    margin-right: 20px;
+}
+
+table {
+    border-spacing: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    background: #ddd;
+    width: fit-content;
+}
+
+td {
+    border-bottom: 0;
+}
+
+
+th,
+td {
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.scrollable{
+    white-space: nowrap;
+    min-height: 100%;
+    height: auto !important;
+    width: 87px;
+    display: inline-block;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.scrollable::-webkit-scrollbar{
+    display: none;
+}
+
+th:last-child{
+    border-right: 0;
+}
+
+tr:last-child > td {
+    border-bottom: 0;
+}
+.tableBtn{
+    position: relative;
+}
+
+.tableClickText{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-80%);
+    z-index: 1;
+}
+
+select{
+    width: 100%;
+    border: 1px black solid;
+}
+
+.filterPop{
+    width: 450px;
+    height: 200px;
+    position: absolute;
+    z-index: 9;
+    border: 1px solid black;
+    border-radius: 5px;
+    bottom: -200px;
+}
+
+.tableWrapper{
+    margin-bottom: 30px;
+}
+
+.filteredTable{
+    width: 0.333333%;
+}
+.profile-page{
+    height: 100vh;
+}
+
+.profile{
+    background: #dddddd;
+    width: 50%;
+    height: 70%;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.modal{
+    position: absolute;
+    width: 90%;
+    /*height: 90%;*/
+    background: #dddddd;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+
+.modal-back{
+    background: black;
+    opacity: .5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    left: 0;
+    top: 0;
+}
+
+.registrationForm {
+    height: 490px;
+    overflow-y: scroll;
+}
+
+.spinner {
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
