@@ -116,7 +116,7 @@ const registerWithEmailAndPassword = async (
             subjectList: subjectList,
             group: group,
         }).then((r) => {
-            console.log('FUCKING RES', r);
+            console.log('RESULT', r);
         });
     } catch (err) {
         console.error(err);
